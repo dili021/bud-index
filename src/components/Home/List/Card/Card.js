@@ -9,7 +9,7 @@ const Card = ({ strain }) => {
   }] = strain;
   return (
     <div className="card">
-      <Link to={`/${id}/desc`}>
+      <Link to={`/${id}/description`}>
         <h1>{name}</h1>
       </Link>
       <div>

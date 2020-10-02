@@ -16,4 +16,6 @@ const fetchFlavours = async () => {
 
 const fetchProps = async () => Promise.all([fetchEffects(), fetchFlavours(), fetchStrains()]);
 
-export default fetchProps;
+export {
+  fetchProps, fetchEffects, fetchStrains, fetchFlavours,
+};

@@ -1,7 +1,8 @@
 import React from 'react';
+import './filter.scss';
 
 const Filter = () => (
-  <div className="form-wrap">
+  <div className="filter">
     <form>
       <select name="effect" id="effect">
         <option value="effect">effect</option>

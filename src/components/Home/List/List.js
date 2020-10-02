@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Card from '../Card/Card';
-import fetchProps from '../../fetch/fetch';
-import './results.scss';
+import Card from './Card/Card';
+import { fetchStrains } from '../../../fetch/fetch';
+import './list.scss';
 
 const placeholder = {
   Afpak: {
@@ -125,10 +125,11 @@ const placeholder = {
   },
 };
 
-const Results = () => {
+const List = () => {
   const [flavors, setflavors] = useState([]);
   const [effects, setEffects] = useState([]);
   const [strains, setStrains] = useState([]);
+
   useEffect(() => {
     setStrains(placeholder);
   //   (async () => {
@@ -146,4 +147,4 @@ const Results = () => {
   );
 };
 
-export default Results;
+export default List;

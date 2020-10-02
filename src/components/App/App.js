@@ -1,19 +1,15 @@
 import React from 'react';
 import './App.scss';
 import { Router } from '@reach/router';
-import Results from '../Results/Results';
-import Filter from '../Filter/Filter';
+import Home from '../Home/Home';
 import Description from '../Description/Description';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* <div className="index" path="/"> */}
-        {/* <Filter /> */}
-        <Results path="/" />
-        {/* </div> */}
-        <Description path="/:strainID/desc" />
+        <Home path="/" />
+        <Description path="/:strainID/description" />
       </Router>
     </div>
   );

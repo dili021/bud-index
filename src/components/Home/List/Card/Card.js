@@ -1,38 +1,23 @@
+/* eslint-disable no-nested-ternary */
 import React from 'react';
 import './card.scss';
-import { v4 as uuid } from 'uuid';
 import { Link } from '@reach/router';
 // eslint-disable-next-line react/prop-types
 const Card = ({ strain }) => {
   const [name, {
-    race, flavors, effects, id,
+    race, id,
   }] = strain;
   return (
     <div className="card">
-      <Link to={`/${id}/description`}>
+      <Link state={{ strain }} to={`/${id}/description`}>
         <h1>{name}</h1>
       </Link>
       <div>
-        <h2>Race: </h2>
-        <span>{race}</span>
-        <div className="props">
-          <ul>
-            <h2>Flavors: </h2>
-            {flavors.map(flav => (
-              <li key={uuid()}>
-                {flav}
-              </li>
-            ))}
-          </ul>
-          <ul>
-            <h2>Effects: </h2>
-            {/* {effects.map(flav => (
-              <li key={uuid()}>
-                {flav}
-              </li>
-            ))} */}
-          </ul>
-        </div>
+        <p>
+          Race:
+          {race}
+        </p>
+        <span>{(race === 'sativa') ? 1 : (race === 'indica') ? 2 : 3}</span>
       </div>
     </div>
   );

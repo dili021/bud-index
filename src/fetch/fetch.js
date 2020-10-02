@@ -16,6 +16,11 @@ const fetchFlavours = async () => {
 
 const fetchProps = async () => Promise.all([fetchEffects(), fetchFlavours(), fetchStrains()]);
 
+const fetchDesc = async id => {
+  const desc = await fetch(`http://strainapi.evanbusse.com/dbRRX3S/strains/data/desc/${id}`);
+  return desc;
+};
+
 export {
-  fetchProps, fetchEffects, fetchStrains, fetchFlavours,
+  fetchProps, fetchEffects, fetchStrains, fetchFlavours, fetchDesc,
 };

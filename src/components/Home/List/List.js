@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card/Card';
-import { fetchStrains } from '../../../fetch/fetch';
+// import { fetchStrains } from '../../../fetch/fetch';
 import './list.scss';
 
 const placeholder = {
@@ -126,8 +126,6 @@ const placeholder = {
 };
 
 const List = () => {
-  const [flavors, setflavors] = useState([]);
-  const [effects, setEffects] = useState([]);
   const [strains, setStrains] = useState([]);
 
   useEffect(() => {

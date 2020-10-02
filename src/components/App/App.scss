@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Sansita+Swashed&display=swap');
+
 body {
   padding: 0;
   margin: 0;
   background: #eff0ec;
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-family: 'Sansita Swashed', cursive;
+}
+a {
+  text-decoration: none;
+  color: rgb(43, 255, 0);
+  text-shadow: 0 0 7px rgb(65, 64, 64);
 }

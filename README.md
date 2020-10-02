@@ -171,15 +171,15 @@ Project Link: [https://github.com/dili021/bud-index](https://github.com/dili021/
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/dili021/repo.svg?style=flat-square
-[contributors-url]: https://github.com/dili021/repo/graphs/contributors
+[contributors-url]: https://github.com/dili021/bud-index/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/dili021/repo.svg?style=flat-square
-[forks-url]: https://github.com/dili021/repo/network/members
+[forks-url]: https://github.com/dili021/bud-index/network/members
 [stars-shield]: https://img.shields.io/github/stars/dili021/repo.svg?style=flat-square
-[stars-url]: https://github.com/dili021/repo/stargazers
+[stars-url]: https://github.com/dili021/bud-index/stargazers
 [issues-shield]: https://img.shields.io/github/issues/dili021/repo.svg?style=flat-square
-[issues-url]: https://github.com/dili021/repo/issues
+[issues-url]: https://github.com/dili021/bud-index/issues
 [license-shield]: https://img.shields.io/github/license/dili021/repo.svg?style=flat-square
-[license-url]: https://github.com/dili021/repo/blob/master/LICENSE.txt
+[license-url]: https://github.com/dili021/bud-index/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/dili021
 [product-screenshot]: images/screenshot.png

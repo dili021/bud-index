@@ -1,0 +1,16 @@
+.card {
+  padding: 12px;
+  border: 2px solid rgb(28, 124, 124);
+  border-radius: 30px;
+  flex: 1;
+  min-width: 200px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.props {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}

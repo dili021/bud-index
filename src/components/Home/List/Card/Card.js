@@ -2,7 +2,8 @@
 import React from 'react';
 import './card.scss';
 import { Link } from '@reach/router';
-// eslint-disable-next-line react/prop-types
+import PropTypes from 'prop-types';
+
 const Card = ({ strain }) => {
   const [name, {
     race, id,
@@ -17,9 +18,13 @@ const Card = ({ strain }) => {
           Race:
           {race}
         </p>
-        <span>{(race === 'sativa') ? 1 : (race === 'indica') ? 2 : 3}</span>
       </div>
     </div>
   );
 };
+
+Card.propTypes = {
+  strain: PropTypes.instanceOf(Object).isRequired,
+};
+
 export default Card;

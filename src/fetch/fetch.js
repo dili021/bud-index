@@ -1,26 +1,26 @@
 const baseURL = 'http://strainapi.evanbusse.com/dbRRX3S';
 
 const fetchStrains = async () => {
-  const strains = await fetch(`${baseURL}/strains/search/all`).then(res => res.json());
+  const response = await fetch(`${baseURL}/strains/search/all`);
+  const strains = await response.json();
   return strains;
 };
-
 const fetchEffects = async () => {
-  const effects = await fetch(`${baseURL}/searchdata/effects`).then(res => res.json());
+  const res = await fetch(`${baseURL}/searchdata/effects`);
+  const effects = await res.json();
   return effects;
 };
+
 const fetchFlavours = async () => {
   const flavors = await fetch(`${baseURL}/searchdata/flavors`).then(res => res.json());
   return flavors;
 };
 
-const fetchProps = async () => Promise.all([fetchEffects(), fetchFlavours(), fetchStrains()]);
-
 const fetchDesc = async id => {
-  const desc = await fetch(`http://strainapi.evanbusse.com/dbRRX3S/strains/data/desc/${id}`);
+  const desc = await fetch(`${baseURL}/strains/data/desc/${id}`);
   return desc;
 };
 
 export {
-  fetchProps, fetchEffects, fetchStrains, fetchFlavours, fetchDesc,
+  fetchEffects, fetchStrains, fetchFlavours, fetchDesc,
 };

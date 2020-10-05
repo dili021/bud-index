@@ -18,7 +18,14 @@
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "import/no-unresolved": "off",
     "no-shadow": "off",
-    "arrow-parens": ["error", "as-needed"]
+    "arrow-parens": ["error", "as-needed"],
+    "no-unused-vars": [
+      2,
+      {
+      "argsIgnorePattern": "^_",
+      "varsIgnorePattern": "^_"
+      }
+    ]
   },
   "ignorePatterns": [
     "dist/",

@@ -1,4 +1,4 @@
-const baseURL = 'http://strainapi.evanbusse.com/dbRRX3S';
+const baseURL = 'https://strainapi.evanbusse.com/dbRRX3S';
 
 const fetchStrains = async () => {
   const response = await fetch(`${baseURL}/strains/search/all`);

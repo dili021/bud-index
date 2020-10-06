@@ -27,7 +27,10 @@ const Description = ({ strainID, location: { state: { strain } } }) => {
         <div className="effects">
           {Object.entries(effects).map(item => (
             <ul key={item}>
-              <h4>{item[0]}</h4>
+              <h4>
+                {item[0]}
+                :
+              </h4>
               {item[1].map(effect => <li key={effect}>{effect}</li>)}
             </ul>
           ))}

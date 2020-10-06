@@ -1,10 +1,13 @@
-import { setFilter, SET_FILTER } from '../actions/setFilter';
+import { ADD_FILTER, CLEAR_FILTER } from '../actions/filter';
 
-const reducer = (state = {}, { type, payload }) => {
-  if (type === SET_FILTER) {
-    return state.filter(item => item.prop === payload);
+const reducer = ({ storage, filter }, { type, payload }) => {
+  if (type === ADD_FILTER) {
+    return { storage, filter: [...filter, payload] };
   }
-  return state;
+  if (type === CLEAR_FILTER) {
+    return { storage, filter: [] };
+  }
+  return { storage, filter };
 };
 
 export default reducer;

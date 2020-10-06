@@ -1,11 +1,25 @@
 .card {
+  background: #000000a8;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
   padding: 12px;
-  border: 2px solid rgb(28, 124, 124);
+  border: 2px solid rgba(253, 253, 253, 0.63);
   border-radius: 30px;
   flex: 1;
   min-width: 200px;
   height: 250px;
   margin: 5px;
+  transition: transform 0.2s ease-out;
+
+  h1 {
+    text-shadow: 0 0 22px rgb(51, 231, 15);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .props {

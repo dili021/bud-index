@@ -1,14 +1,15 @@
 header {
-  margin-bottom: 60px;
-  background: #3CB80B;
+  background: #00000098;
   display: flex;
   justify-content: space-between;
-  height: 120px;
   align-items: center;
+  flex-wrap: wrap;
+
   h1 {
-    margin: 0 70px;
-    font-size: 4rem;
+    margin: 0 30px;
+    font-size: 2.3rem;
     color: darkgoldenrod;
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 4px darkgoldenrod;
+    white-space: nowrap;
   }
 }

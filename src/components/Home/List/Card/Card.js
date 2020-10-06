@@ -15,7 +15,6 @@ const Card = ({ strain }) => {
       </Link>
       <div>
         <p>
-          Race:
           {race}
         </p>
       </div>

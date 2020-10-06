@@ -2,3 +2,26 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.querry-info {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item-count {
+  margin-left: 20px;
+  display: block;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 4px #277c05;
+}
+
+.querry-param {
+  background: #277c05ab;
+  margin-right: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 8px;
+}

@@ -9,6 +9,8 @@ const storage = localStorage.getItem('theBudIndexStore')
     return strains;
   });
 
-const store = createStore(reducer, storage);
+const initialStore = { storage, filter: [] };
+
+const store = createStore(reducer, initialStore);
 
 export default store;

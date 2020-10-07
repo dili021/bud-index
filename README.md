@@ -35,7 +35,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/dili021/bud-index">
-    <img src="assets/960px-Cannabis_leaf.png" alt="Logo" width="80" height="80">
+    <img src="src/assets/960px-Cannabis_leaf.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Bud Index</h3>

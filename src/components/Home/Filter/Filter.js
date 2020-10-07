@@ -38,12 +38,12 @@ const Filter = state => {
         onChange={e => handleChange(e)}
         onSubmit={e => handleSubmit(e)}
       >
-        <select name="effect" id="effect">
-          <option disabled selected>Effects</option>
+        <select name="effect" defaultValue id="effect">
+          <option disabled>Effects</option>
           {fxList}
         </select>
-        <select name="flavor" id="flavor">
-          <option disabled selected>Flavors</option>
+        <select name="flavor" defaultValue id="flavor">
+          <option disabled>Flavors</option>
           {flavorsList}
         </select>
         <button type="submit">Clear Filter</button>

@@ -1,5 +1,6 @@
 const ADD_FILTER = 'ADD_FILTER';
 const CLEAR_FILTER = 'CLEAR_FILTER';
+
 const addFilter = filter => ({
   type: ADD_FILTER,
   payload: filter,

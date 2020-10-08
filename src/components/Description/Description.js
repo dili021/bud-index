@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './description.scss';
 import { fetchDesc } from '../../fetch/fetch';
+import Spinner from '../Spinner/Spinner';
 
 const Description = ({ strainID, location: { state: { strain } } }) => {
   const [name, { race, flavors, effects }] = strain;
@@ -16,7 +17,9 @@ const Description = ({ strainID, location: { state: { strain } } }) => {
         {race}
       </div>
       <div className="description-box">
-        <p>{desc}</p>
+
+        {desc ? <p>{desc}</p> : <Spinner />}
+
       </div>
       <ul className="flavors">
         <h3>Flavors:</h3>

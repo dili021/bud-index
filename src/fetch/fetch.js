@@ -2,15 +2,6 @@ import 'regenerator-runtime/runtime';
 
 const baseURL = 'https://strainapi.evanbusse.com/dbRRX3S';
 
-const fetchStrains = async () => {
-  try {
-    const response = await fetch(`${baseURL}/strains/search/all`);
-    const strains = await response.json();
-    return strains;
-  } catch (error) {
-    return error;
-  }
-};
 const fetchEffects = async () => {
   try {
     const res = await fetch(`${baseURL}/searchdata/effects`);
@@ -40,5 +31,5 @@ const fetchDesc = async id => {
 };
 
 export {
-  fetchEffects, fetchStrains, fetchFlavours, fetchDesc,
+  fetchEffects, fetchFlavours, fetchDesc,
 };

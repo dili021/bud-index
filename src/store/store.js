@@ -1,16 +1,11 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import reducer from './reducers/reducer';
-import { fetchStrains } from '../fetch/fetch';
 
-const storage = localStorage.getItem('theBudIndexStore')
-  ? JSON.parse(localStorage.getItem('theBudIndexStore'))
-  : fetchStrains().then(strains => {
-    localStorage.setItem('theBudIndexStore', JSON.stringify(strains));
-    return strains;
-  });
-
-const initialStore = { storage, filter: [] };
-
-const store = createStore(reducer, initialStore);
+const initialStore = { strains: {}, filter: [] };
+const store = createStore(
+  reducer, initialStore, composeWithDevTools(applyMiddleware(thunk)),
+);
 
 export default store;

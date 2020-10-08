@@ -8,6 +8,7 @@ const Card = ({ strain }) => {
   const [name, {
     race, id,
   }] = strain;
+  // console.log(strain);
   return (
     <div className="card">
       <Link state={{ strain }} to={`/${id}/description`}>

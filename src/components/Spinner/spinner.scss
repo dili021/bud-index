@@ -1,0 +1,17 @@
+.spinner-div {
+  margin: 0 auto;
+}
+
+.spinner {
+  animation: spin 1s infinite linear;
+  height: 100px;
+  width: 100px;
+  transform-origin: center;
+  display: block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

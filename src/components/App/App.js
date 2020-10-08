@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.scss';
 import { Router } from '@reach/router';
-import { Provider } from 'react-redux';
+import { connect, Provider } from 'react-redux';
+import PropTypes from 'prop-types';
 import Home from '../Home/Home';
 import Description from '../Description/Description';
 import store from '../../store/store';
+import { fetchStrains } from '../../store/actions/strains';
 
-function App() {
+const App = ({ fetchStrains }) => {
+  useEffect(() => {
+    fetchStrains();
+  }, [fetchStrains]);
+
   return (
     <div className="App">
       <Provider store={store}>
@@ -17,6 +23,14 @@ function App() {
       </Provider>
     </div>
   );
-}
+};
 
-export default App;
+App.propTypes = {
+  fetchStrains: PropTypes.func.isRequired,
+};
+
+const mapState = state => (state);
+const mapDispatch = dispatch => ({
+  fetchStrains: () => dispatch(fetchStrains()),
+});
+export default connect(mapState, mapDispatch)(App);
